@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "firstmod",
+	"version": "${version}",
+	"name": "First Mod",
+	"description": "This an amazing mod by Fizax",
+	"authors": [
+		"Fizax!"
+	],
+	"contact": {
+		"homepage": "https://fizax.net/",
+		"sources": "https://github.com/First-Mod-By-Fizax/Fabric-Tutorial-1.21"
+	},
+	"license": "MIT",
+	"icon": "assets/firstmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.fizax.firstmod.FirstMod"
+		],
+		"fabric-datagen": [
+			"net.fizax.firstmod.FirstModDataGenerator"
+		],
+		"client":[
+			"net.fizax.firstmod.FirstModClient"
+		]
+	},
+	"mixins": [
+		"firstmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
